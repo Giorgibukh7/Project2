@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="RegressionTestSuite" parallel="tests">
+    <test name = "RegressionTests1">
+        <groups>
+            <run>
+                <include name="Regression1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestMethodOne"/>
+            <class name="TestMethodTwo"/>
+            <class name="TestMethodThree"/>
+            <class name="TestMethodFour"/>
+            <class name="TestMethodFive"/>
+        </classes>
+    </test>
+    <test name = "RegressionTests2">
+        <groups>
+            <run>
+                <include name="Regression2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestMethodOne"/>
+            <class name="TestMethodTwo"/>
+            <class name="TestMethodThree"/>
+            <class name="TestMethodFour"/>
+            <class name="TestMethodFive"/>
+        </classes>
+    </test>
+</suite>
