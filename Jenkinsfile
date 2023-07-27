@@ -10,7 +10,7 @@ pipeline{
         }
         stage('Sleep'){
           steps{
-           sleep(time:500,unit:'MILLISECONDS')
+           bat 'mvn -version'
           }
         }
         
