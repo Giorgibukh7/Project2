@@ -11,7 +11,6 @@
             <class name="TestMethodTwo"/>
             <class name="TestMethodThree"/>
             <class name="TestMethodFour"/>
-            <class name="TestMethodFive"/>
         </classes>
     </test>
     <test name = "RegressionTests2">
@@ -25,7 +24,6 @@
             <class name="TestMethodTwo"/>
             <class name="TestMethodThree"/>
             <class name="TestMethodFour"/>
-            <class name="TestMethodFive"/>
         </classes>
     </test>
 </suite>

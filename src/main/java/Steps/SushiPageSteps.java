@@ -43,6 +43,7 @@ public class SushiPageSteps {
     }
     @Step("Check Sort Order is 'Price Decreasing'")
     public SushiPageSteps CheckSortOrderPriceDecreasing(){
+        page.freezeObject.shouldNotBe(Condition.visible);
     if( getOfferPrice(0) > getOfferPrice(1) ){}
     else{
         Assert.fail("Offers Are Not Sorted By 'Price Decreasing'");

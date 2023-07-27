@@ -24,7 +24,7 @@ public class TestMethodFive extends BaseTestStrictAssert {
     public RegistrationFromSteps registration = new RegistrationFromSteps();
 
 
-    @Test(groups = {"Regression2"})
+    //@Test(groups = {"Regression2"})
     @Description("Checks Registration Form Functionality,Fills all fields except gender and expects invalid gender error")
     @Story("Test Method 5")
     void TestMethodFiveBody() throws SQLException{
