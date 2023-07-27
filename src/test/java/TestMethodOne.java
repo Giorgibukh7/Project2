@@ -1,6 +1,7 @@
 import Data.SwoopTestData;
 import Steps.DasvenebaPageSteps;
 import Steps.HomePageSteps;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.testng.SoftAsserts;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -23,8 +24,10 @@ public class TestMethodOne extends BaseTestStrictAssert {
     @Test(groups = {"Regression1"})
     @Description("Vist 'Dasveneba' Category on Swoop and test Price Filter functionality")
     @Story("Test Method 1")
-    void TestMethodOneBody(){
+    void TestMethodOneBody() throws InterruptedException {
 
+        Configuration.browserSize = "1920x1080";
+        Thread.sleep(3000);
         homePageSteps.ClickDasvnebaButton();
         dasvenebaPageSteps.InputPriceRangeFilter(data.FilterMinPrice, data.FilterMaxPrice).ConfirmFilter().CheckPriceRangeOfOffers(data.FilterMinPrice, data.FilterMaxPrice);
 
