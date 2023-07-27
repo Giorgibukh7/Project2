@@ -1,14 +1,14 @@
 pipeline{
   agent any
   stages{
-    stage('Functionality Test'){
+    stage('Test'){
       parallel{
         stage('Functionality Test'){
           steps{
             bat 'mvn clean test'
           }
         }
-        stage('Sleep'){
+        stage('get version'){
           steps{
            bat 'mvn -version'
           }
